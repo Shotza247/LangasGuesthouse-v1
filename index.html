@@ -1,0 +1,515 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langa's Guesthouse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#"> <img src="LangaLogo.jpg" class="nav-icon" alt="LangasLogo"/>Langa's Guesthouse</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roomscarousel">Rooms</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#booking-form"><i class="fa fa-address-book"></i>Check-In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ContactUs">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li>
+                        <a class="nav-link" href="signup.html">SignIn</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">SignUp</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<body>
+        <section class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">Welcome to Langa's Guesthouse!</h1>
+            <p class="lead">Experience the warmth and hospitality of our guesthouse.</p>
+            <hr class="my-4">
+            <p>We offer comfortable and affordable rooms, perfect for your next stay.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#booking-form" role="button" data-toggle="collapse" data-target="#booking-form">Book Now!</a>
+            </p>
+            </div>
+        </section>
+        <section class="m-5">
+            <h2 class="display-5 text-center" data-aos="fade-left">Our Rooms</h2>
+            <p class="lead">We offer a range of rooms to suit your needs.</p>
+            <div class="row">
+              
+<div id="roomscarousel"class="col-md-4">
+    <div class="card" data-aos="fade-left">
+        <div id="room1Carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#room1Carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#room1Carousel" data-slide-to="1"></li>
+                <li data-target="#room1Carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="singlesbedroom.jpg" alt="Room 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="singlesbathroom.jpg" alt="Room 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="outtopoolview.jpg" alt="Room 1">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#room1Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#room1Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Single Room</h5>
+            <p class="card-text">Our single rooms are perfect for solo travelers.</p>
+            <a href="#booking-form" class="btn btn-primary" data-toggle="collapse" data-target="#booking-form" onclick="document.getElementById('room-type').value='single'">Book Now!</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card" data-aos="fade-left" data-aos-delay="100">
+        <div id="room2Carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#room2Carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#room2Carousel" data-slide-to="1"></li>
+                <li data-target="#room2Carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="couplesbathroom.jpg" alt="Room 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="couplesbedroom.jpg" alt="Room 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="kitchen.jpg" alt="Room 2">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#room2Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#room2Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Double Room</h5>
+            <p class="card-text">Our double rooms are perfect for couples or friends.</p>
+            <a href="#booking-form" class="btn btn-primary" data-toggle="collapse" data-target="#booking-form" onclick="document.getElementById('room-type').value='double'">Book Now!</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card" data-aos="fade-left" data-aos-delay="200">
+        <div id="room3Carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#room3Carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#room3Carousel" data-slide-to="1"></li>
+                <li data-target="#room3Carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="familylounge.jpg" alt="Room 3">
+                </div>
+<div class="carousel-item">
+    <img class="d-block w-100" src="familybedroom.jpg" alt="Room 3">
+</div>
+<div class="carousel-item">
+    <img class="d-block w-100" src="familybathroom.jpg" alt="Room 3">
+</div>
+</div>
+<a class="carousel-control-prev" href="#room3Carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#room3Carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+</a>
+</div>
+<div class="card-body">
+    <h5 class="card-title">Family Room</h5>
+    <p class="card-text">Our family rooms are perfect for families or groups.</p>
+    <a href="#booking-form" class="btn btn-primary" data-toggle="collapse" data-target="#booking-form" onclick="document.getElementById('room-type').value='family'">Book Now!</a>
+
+</div>
+</div>
+</div>
+ </div>
+        </section>
+       <section class="booknow" data-aos="fade-up" data-aos-delay="100">
+    <form id="booking-form" class="collapse">
+        <h2 class="text-center">Book Now</h2>
+        <div class="row">
+            <div class="col-lg-6 col-md-4">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                  <div class="form-group">
+                    <label for="trip-type">Reason for Booking:</label>
+                    <select id="trip-type" name="trip-type" required>
+                        <option value="">Select Reason</option>
+                        <option value="business">Business</option>
+                        <option value="personal">Personal</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <div class="form-group">
+                    <label for="arrival-date">Arrival Date:</label>
+                    <input type="date" id="arrival-date" name="arrival-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="departure-date">Departure Date:</label>
+                    <input type="date" id="departure-date" name="departure-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="room-type">Room Type:</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="">Select Room Type</option>
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                        <option value="family">Family Room</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="number-of-guests">Number of Guests:</label>
+                    <input type="number" id="number-of-guests" name="number-of-guests" required>
+                </div>
+            </div>
+        <div class="col-lg-12 col-md-4">
+                 <div class="form-group">
+                    <label for="special-requests"><i class="fas fa-comment"></i> Special Requests/dditionl information:</label>
+                    <textarea id="special-requests" name="special-requests"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Make Booking</button>
+                <button type="button" class="btn btn-secondary" id="view-bookings">View Bookings</button>
+            </div>
+       </div>
+    </form>
+</section>
+<div id="spaces" class="container">
+    <h2 class="text-center"> Amnities </h2>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card">
+                <img class="card-img-top" src="familylounge.jpg" alt="Lounge">
+                <div class="card-body">
+                    <h5 class="card-title">Lounge</h5>
+                    <p class="card-text">Relax and unwind in our comfortable lounge area.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card">
+                <img class="card-img-top" src="familydinningroom.jpg" alt="Dining">
+                <div class="card-body">
+                    <h5 class="card-title">Dining</h5>
+                    <p class="card-text">Enjoy delicious meals in our spacious dining area.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card">
+                <img class="card-img-top" src="kidsplayarea.jpg" alt="Play Area">
+                <div class="card-body">
+                    <h5 class="card-title">Play Area</h5>
+                    <p class="card-text">Keep the kids entertained in our fun play area.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card">
+                <img class="card-img-top" src="familybathroom.jpg" alt="Bathroom">
+                <div class="card-body">
+                    <h5 class="card-title">Bathroom</h5>
+                    <p class="card-text">Freshen up in our clean and spacious bathroom.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card">
+                <img class="card-img-top" src="familybedroom.jpg" alt="Bedroom">
+                <div class="card-body">
+                    <h5 class="card-title">Bedroom</h5>
+                    <p class="card-text">Get a good night's sleep in our comfortable bedroom.</p>
+                </div>
+            </div>
+        </div>
+           <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card">
+                <img class="card-img-top" src="kitchen.jpg" alt="Kitchen">
+                <div class="card-body">
+                    <h5 class="card-title">Kitchen</h5>
+                    <p class="card-text">Prepare your best meal like a chef in our kitchens.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<section id="reviews" class="m-5">
+    <h2 class="text-center" data-aos="fade-up">Guest Reviews</h2>
+    <div class="row">
+        <div class="col-md-4" data-aos="fade-right">
+            <div class="card text-center">
+                <img src="john.jpg" alt="User 1" class="rounded-circle mx-auto mt-3" style="width: 100px; height: 100px;">
+                <div class="card-body">
+                    <h5 class="card-title">John Doe</h5>
+                    <p class="card-text">"Amazing stay! The staff was incredibly friendly and the rooms were spotless."</p>
+                    <p class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </p>
+                    <p class="text-muted">Reviewed on: 2023-09-15</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-left">
+            <div class="card text-center">
+                <img src="suzana.jpg" alt="User 2" class="rounded-circle mx-auto mt-3" style="width: 100px; height: 100px;">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">"The family room was perfect for us. Great amenities and a lovely atmosphere."</p>
+                    <p class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </p>
+                    <p class="text-muted">Reviewed on: 2023-09-10</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-right">
+            <div class="card text-center">
+                <img src="walter.jpg" alt="User 3" class="rounded-circle mx-auto mt-3" style="width: 100px; height: 100px;">
+                <div class="card-body">
+                    <h5 class="card-title">Michael Brown</h5>
+                    <p class="card-text">"The location is perfect, and the breakfast was delicious. Highly recommend!"</p>
+                    <p class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </p>
+                    <p class="text-muted">Reviewed on: 2023-09-05</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-left">
+            <div class="card text-center">
+                <img src="fatima.jpg" alt="User 4" class="rounded-circle mx-auto mt-3" style="width: 100px; height: 100px;">
+                <div class="card-body">
+                    <h5 class="card-title">Emily Davis</h5>
+                    <p class="card-text">"The pool view was breathtaking. A perfect getaway spot for relaxation."</p>
+                    <p class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </p>
+                    <p class="text-muted">Reviewed on: 2023-08-30</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-right">
+            <div class="card text-center">
+                <img src="april.jpg" alt="User 5" class="rounded-circle mx-auto mt-3" style="width: 100px; height: 100px;">
+                <div class="card-body">
+                    <h5 class="card-title">Christy Wilson</h5>
+                    <p class="card-text">"The staff went above and beyond to make our stay comfortable. Will visit again!"</p>
+                    <p class="text-warning">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </p>
+                    <p class="text-muted">Reviewed on: 2023-08-25</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Us Section -->
+<section id="about-us" class="py-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title text-center">About Us</h2>
+        <p class="section-subtitle text-center">Learn more about our mission, values, and team.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Welcome to Langa's Guesthouse, nestled in the heart of Krugersdorp. Our charming guesthouse offers a warm and welcoming retreat for travelers seeking comfort, relaxation, and exceptional hospitality.</p>
+        <h4>Our Story</h4>
+        <p>Langa's Guesthouse is a family-owned and operated guesthouse that has been providing top-notch accommodations and service to our guests for 9 years. Our story began with a passion for hospitality and a desire to create a home away from home for travelers visiting our beautiful city.</p>
+        <h4>Our Values</h4>
+        <ul>
+          <li><strong>Hospitality</strong>: We pride ourselves on our warm and welcoming approach to hospitality.</li>
+          <li><strong>Comfort</strong>: We strive to provide our guests with a comfortable and relaxing stay.</li>
+          <li><strong>Cleanliness</strong>: We maintain the highest standards of cleanliness and hygiene.</li>
+          <li><strong>Community</strong>: We are proud to be a part of our local community and support local businesses and initiatives.</li>
+        </ul>
+    </div>
+      <div class="col-md-6">
+        <img src="Lreception.jpg" alt="About Us Image" class="img-fluid rounded">
+          <p class="section-subtitle text-center">Property Head Office</p>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-6">
+        <h4>Our Mission</h4>
+        <p>At Langa's Guesthouse, we are committed to providing our guests with an unforgettable experience. Our mission is to deliver exceptional service, ensure impeccable cleanliness and comfort, and create a warm and welcoming atmosphere that makes our guests feel right at home.</p><p>At Langa's Guesthouse, we are committed to providing our guests with an unforgettable experience. Our mission is to deliver exceptional service, ensure impeccable cleanliness and comfort, and create a warm and welcoming atmosphere that makes our guests feel right at home.</p>
+        
+    </div>
+      <div class="col-md-6">
+        <h4>Meet Our Team</h4>
+        <p>Our team is dedicated to ensuring that our guests have an exceptional experience at Langa's Guesthouse. 
+            From our friendly front desk staff to our skilled housekeeping team, we are all passionate about delivering top-notch service and ensuring that our guests feel welcome and at home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+        
+<section id="privacypolice" class="m-5">
+  <div class="m-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h4><i class="fas fa-clock p-2"></i> Receptionist Hours: </h4>
+        <ul>
+          <li>Monday to Friday: 8am - 5pm</li>
+          <li>Saturday: 9am - 1pm</li>
+          <li>Sunday: Closed</li>
+        </ul>
+          <h4 id="ContactUs">Contact Details: </h4>
+        <ul class="list-unstyled ms-4">
+          <li>
+            <i class="fas fa-phone"></i> Phone: 071 234 567
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i> Email: <a href="mailto:C&LSolutions@gmail.com">C&LSolutions@gmail.com</a>
+          </li>
+        </ul>
+          <ul class="list-unstyled ms-4">
+              <h4>Social Media: </h4>
+              <li>
+                   <i class="fab fa-facebook p-2"></i><a href="#" class="btn"> LangaPropeties</a>
+              </li>
+              <li>
+                   <i class="fab fa-twitter p-2"></i><a href="#" class="btn"> GuestHouseByLanga</a>
+              </li>
+              <li>
+                   <i class="fab fa-instagram p-2"></i><a href="#" class="btn"> LangasGuestHouse</a>
+              </li>
+              <li>
+                   <i class="fab fa-linkedin p-2"></i><a href="#" class="btn"> LangasGuestHouseABC</a>
+              </li>
+          </ul>
+      </div>
+      <div class="col-md-6">
+        <h3><i class="fas fa-map-marker-alt"></i> Location:</h3>
+        <p>Visit us today at:</br>
+            <i class="fas fa-building p-2"></i><strong>Next to BlueBottle Liquor Store </br> 3241 Richard Wessel & Mota Rd</br> Krugersdorp, 1739</br> Johannesburg</strong>
+        </p>
+<div id="security" class="bg-dark text-light">
+      <div class="col-md-12">
+        <h2 class="section-title text-center ">Security policy</h2>
+        <p class="section-subtitle">This is how we secure your information.</p>
+        <p>We maintain our reliability by our love for family bonding and safety.</p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#privacyPolicyModal"> <i class="fas fa-lock"></i> Privacy Policy</button>
+        <!-- Privacy Policy Modal -->
+        <div class="modal fade bg-light text-dark" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3 class="text-center">Security and Privacy</h3>
+                <p>We take the security and privacy of our customers seriously.</p>
+                <ul>
+                  <li>SSL encryption for secure data transmission</li>
+                  <li>Compliance with GDPR and POPI regulations</li>
+                  <li>Regular security audits and updates</li>
+                    <li>Outline how personal data will be used to streamline procrsses and improve system performance.</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Accept</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+   
+</section>
+    <hr>
+    <footer class="bg-light">
+        <div class="container text-center">
+            <ul class="list-unstyled"> Social Media:
+            <li id="socialicons" class="row">
+                <a href="#" class="btn"><i class="fab fa-facebook p-2"></i></a>
+                <a href="#" class="btn"><i class="fab fa-twitter p-2"></i></a>
+                <a href="#" class="btn"><i class="fab fa-instagram p-2"></i></a>
+                <a href="https://www.linkedin.com/in/jabulani-ndlovu-628578182" class="btn"><i class="fab fa-linkedin p-2"></i></a>
+            </li>
+            <li>
+                <a href="#" class="foot-nav"> Home </a>
+                <a href="#roomscarousel" class="foot-nav"> Rooms </a>
+                <a href="#booknow" class="foot-nav"> Book Now </a>
+                <a href="#about-us" class="foot-nav"> About Us </a>
+                <a href="#ContactUs" class="foot-nav"> Contact Us </a>
+                <a href="#security" class="foot-nav"> Privacy Policy</a>
+            </li>
+            </ul>
+            <p >  &copy; 2023 Langa's Guesthouse. </br>All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

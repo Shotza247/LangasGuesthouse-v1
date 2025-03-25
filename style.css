@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.nav-icon
+{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+.jumbotron {
+    background-image: url('Lreception.jpg');
+    background-size: cover;
+    height: auto;
+    color: #000;
+    text-align: center;
+
+}
+.jumbotron .container {
+    backdrop-filter: blur(20px);
+    padding: 15px;
+}
+.jumbotron h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 15px;
+    backdrop-filter: blur(20px);
+}
+
+.jumbotron p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+.card {
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: green;
+}
+#booking-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+#about-us {
+    background-color: #f7f7f7;
+}
+
+#about-us .section-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#about-us .section-subtitle {
+    font-size: 18px;
+    color: #666;
+}
+
+#about-us img {
+    margin: 10px;
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-us .btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#about-us .btn-primary:hover {
+    background-color: #3e8e41;
+}
+#security {
+    border-radius: 5%;
+    padding: 50px;
+}
+#privacyPolicyModal {
+    font-size: 16px;
+}
+
+#privacyPolicyModal .modal-title {
+    font-weight: bold;
+}
+
+#privacyPolicyModal .modal-body {
+    padding: 20px;
+}
+
+#privacyPolicyModal .modal-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #333;
+}
+#socialicons {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.fab {
+    font-size: 18px;
+}
+footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.foot-nav{
+    padding: 5px;
+}
