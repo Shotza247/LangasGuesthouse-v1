@@ -50,6 +50,9 @@ Visitors can navigate through the website using the navigation bar at the top.
 * Review the "Privacy Policy" by clicking the button in the "Contact Us" section.
 * Users can attempt to "SignIn" or "SignUp" using the links in the navigation bar, which will likely redirect them to the respective `signup.html` page (not included in this main HTML file, still working on it).
 
+## Status
+In-Progress
+
 ## Contributing
 
 If you would like to contribute to this project, please feel free to fork the repository and submit a pull request with your changes.
